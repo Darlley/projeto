@@ -1,1 +1,1 @@
-alert("Teste script public/js/main.js")
+console.log("Teste script public/js/main.js")

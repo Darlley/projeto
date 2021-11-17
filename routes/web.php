@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $nome = 'Página inicial';
-    $arr = [0,1,2,3,4,5];
-    return view('welcome',
-        [
-            'nome' => $nome, 
-            'arr' => $arr
-        ]
-    );
+    return view('welcome');
 });
 
 Route::get('/about', function () {
     return view('about');
 });
+
+
+Route::get('/contents/{id}', function ($id = 1) {
+    return view('content', ['id' => $id]);
+});
+
+Route::get('/contents/', [EventController::class, 'index']);
+route::get('/events/create', [EventController::class, 'create']);
