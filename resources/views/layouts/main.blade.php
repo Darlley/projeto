@@ -29,11 +29,19 @@
                 <li><a href="/">Início</a></li>
                 <li><a href="/about">Sobre</a></li>
                 <li><a href="/contents/">Links</a></li>
-                <li class="login"><a href="/events/create">Criar link</a></li>
+                <li class="login"><a href="/events/create">Cadastrar evento</a></li>
             </ul>
         </nav>
+
+        <main>
+            <div class="container-msg">
+                @if(session('msg'))
+                    <p class="msg">{{ session('msg') }} <ion-icon name="checkmark-outline"></ion-icon></p>
+                @endif
+            </div>
+            @yield('content')
+        </main>
     
-        @yield('content')
 
         <footer class="footer">
             <p>Criado por <span class="name__footer">Darlley</span> &copy 2021</p>

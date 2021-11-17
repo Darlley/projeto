@@ -14,18 +14,16 @@ use App\Http\Controllers\EventController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/about', function () {
     return view('about');
 });
-
-
 Route::get('/contents/{id}', function ($id = 1) {
     return view('content', ['id' => $id]);
 });
 
-Route::get('/contents/', [EventController::class, 'index']);
+Route::get('/', [EventController::class, 'index']);
+Route::get('/contents/', [EventController::class, 'contents']);
 route::get('/events/create', [EventController::class, 'create']);
+
+
+route::post('/events', [EventController::class, 'store']);
