@@ -12,7 +12,6 @@ div{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
 }
 h1{
     background: -webkit-linear-gradient(#225eff, #000);
@@ -118,6 +117,7 @@ nav ul li a:hover{
 }
 .evento-page div{
     width: 80%;
+    margin: 0 auto;
 }
 .evento-page div div:nth-child(1){
     display: flex;
@@ -139,8 +139,17 @@ nav ul li a:hover{
     padding: 2rem;
     border-radius: 6px;
 }
-.evento-page > div div:nth-child(2) h2{
+.evento-page > div div:nth-child(2) h2, .evento-page > div div:nth-child(2) h3{
     color: #8c8c8c;
+}
+.evento-page > div div:nth-child(2) ul li:hover{
+    transform: scale(1.050, 1.050);
+}
+.evento-page > div div:nth-child(2) ul li::marker{
+    color: #5180ff;
+}
+.evento-page > div div:nth-child(2) ul li:hover::marker{
+    color: #225eff;
 }
 
 .evento-private{
@@ -150,6 +159,26 @@ nav ul li a:hover{
     color: #5cff5c;
 }
 
+/* Cadastrar itens */
+.container-itens, .container-itens div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Cadastrar eventos */
+.new-event{
+    display: flex;
+    width: 100%;
+}
+.new-event div:nth-child(2) form{
+    display: flex;
+    flex-direction: column;
+}
+.new-event div:nth-child(2) form div {
+    align-items: flex-start;
+    text-align: left;
+}
 
 .eventos li a img{
     width: 200px;
