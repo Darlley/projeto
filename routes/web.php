@@ -23,7 +23,7 @@ Route::get('/contents/{id}', function ($id = 1) {
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/contents/', [EventController::class, 'contents']);
-route::get('/events/create', [EventController::class, 'create']);
-
 
 route::post('/events', [EventController::class, 'store']);
+route::get('/events/create', [EventController::class, 'create']);
+route::get('/events/{id}', [EventController::class, 'show']);

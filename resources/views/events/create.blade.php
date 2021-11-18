@@ -30,7 +30,10 @@
                     <option value="1">Sim</option>
                 </select>
             </div>
-            <input type="submit" value="Criar evento">
+            <button type="submit">
+                Salvar 
+                <ion-icon name="duplicate-outline"></ion-icon>
+            </button>
         </form>
     </div>
 @endsection

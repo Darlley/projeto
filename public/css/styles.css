@@ -112,6 +112,45 @@ nav ul li a:hover{
     background-color: #225eff;
 }
 
+/* eventos */
+.evento-page{
+    display: flex;
+}
+.evento-page div{
+    width: 80%;
+}
+.evento-page div div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.evento-page > div > div {
+    width: 80%;
+    align-items: flex-start;
+}
+.evento-page div img{
+    width: 50%;
+}
+.evento-page > div div:nth-child(2){
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c0c0c;
+    padding: 2rem;
+    border-radius: 6px;
+}
+.evento-page > div div:nth-child(2) h2{
+    color: #8c8c8c;
+}
+
+.evento-private{
+    color: #ffff6a;
+}
+.evento-public{
+    color: #5cff5c;
+}
+
+
 .eventos li a img{
     width: 200px;
 }
