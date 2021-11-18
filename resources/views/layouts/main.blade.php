@@ -30,11 +30,11 @@
                 <li><a href="/about">Sobre</a></li>
                 <li><a href="/contents/">Links</a></li>
                 @guest
-                <li><a href="/login">Login</a></li>
+                <li class="login"><a href="/login">Login</a></li>
                 <li><a href="/register">Registrar</a></li>
                 @endguest
-                <li class="login"><a href="/events/create">Cadastrar evento</a></li>
                 @auth
+                <li class="login"><a href="/events/create">Cadastrar evento</a></li>
                 <li><a href="/dashboard">Dashboard</a></li>
                 <li>
                     <form action="/logout" method="post">

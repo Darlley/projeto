@@ -25,7 +25,7 @@ Route::get('/', [EventController::class, 'index']);
 Route::get('/contents/', [EventController::class, 'contents']);
 
 route::post('/events', [EventController::class, 'store']);
-route::get('/events/create', [EventController::class, 'create']);
+route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
 route::get('/events/{id}', [EventController::class, 'show']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

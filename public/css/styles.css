@@ -65,6 +65,7 @@ nav ul li a:hover{
 }
 
 .login{
+    display: inline-block;
     margin-left: 3rem;
 }
 .login a{
