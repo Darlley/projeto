@@ -14,7 +14,7 @@ div{
     width: 100%;
 }
 h1{
-    background: -webkit-linear-gradient(#225eff, #000);
+    background: -webkit-linear-gradient(#ff2222, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -35,7 +35,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 nav ul li a:hover{
-    background-color: #225eff;
+    background-color: #ff2222;
     text-shadow: 2px 2px 10px #000;
 }
 
@@ -50,7 +50,7 @@ nav ul li a:hover{
     padding: 1rem;
     width: max-content;
     background-color: #c9e9ff;
-    color: #225eff;
+    color: #ff2222;
     position: absolute;
     align-items: center;
     font-weight: bold;
@@ -69,7 +69,7 @@ nav ul li a:hover{
     margin-left: 3rem;
 }
 .login a{
-    background-color: #225eff;
+    background-color: #ff2222;
 }
 
 /* HOME */
@@ -90,7 +90,7 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .eventos li::marker{
-    color: #225eff;
+    color: #ff2222;
 }
 .eventos li{
     display: flex;
@@ -109,7 +109,7 @@ nav ul li a:hover{
     left: 5%;
     height: 6px;
     z-index: -1;
-    background-color: #225eff;
+    background-color: #ff2222;
 }
 
 /* eventos */
@@ -136,7 +136,7 @@ nav ul li a:hover{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #0c0c0c;
+    background-color: #1c1c1c;
     padding: 2rem;
     border-radius: 6px;
 }
@@ -147,10 +147,10 @@ nav ul li a:hover{
     transform: scale(1.050, 1.050);
 }
 .evento-page > div div:nth-child(2) ul li::marker{
-    color: #5180ff;
+    color: #ff5151;
 }
 .evento-page > div div:nth-child(2) ul li:hover::marker{
-    color: #225eff;
+    color: #ff2222;
 }
 
 .evento-private{
@@ -200,16 +200,16 @@ nav ul li a:hover{
     padding-bottom: 1rem;
     width: 80%;
     margin: .5rem auto;
-    border: 2px solid #225eff;
+    border: 2px solid #ff2222;
     transition: all .5s;
 }
 .content-container div a:hover{
-    background-color: #225eff;
+    background-color: #ff2222;
 }
 
 
 .name__footer{
-    border-bottom: 2px solid #225eff;
+    border-bottom: 2px solid #ff2222;
     padding: 5px;
     color: #fff;
 }
