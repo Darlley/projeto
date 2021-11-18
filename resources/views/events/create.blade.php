@@ -18,6 +18,10 @@
                     <input type="text" id="title" name="title" placeholder="Nome">
                 </div>
                 <div>
+                    <label for="date">Data do evento</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div>
                     <label for="description">Descrição do evento</label>
                     <textarea name="description" id="description" placeholder="O que vai acontecer no evento"></textarea>
                 </div>

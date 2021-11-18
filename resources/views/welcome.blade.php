@@ -13,20 +13,22 @@
                 </form>
             </div>
             <div id="event-container">
-                <h2>Eventos cadastrados</h2>
-                @if($events)
-                <ul class="eventos">
-                    @foreach($events as $event)
-                    <li>
-                        <a href="/events/{{ $event->id }}">
-                            {{ $event->title }} -- {{ $event->description }}
-                            @if($event->image)
-                                <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
-                            @endif
-                        </a>
-                    </li>
-                    @endforeach
-                </ul>
+                @if(count($events) > 0)
+                    <h2>Eventos cadastrados</h2>
+                    <ul class="eventos">
+                        @foreach($events as $event)
+                        <li>
+                            <a href="/events/{{ $event->id }}">
+                                {{ $event->title }} -- {{ $event->description }}
+                                @if($event->image)
+                                    <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
+                                @endif
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                @else
+                    <h2>Não há eventos!</h2>
                 @endif
             </div>
         </div>

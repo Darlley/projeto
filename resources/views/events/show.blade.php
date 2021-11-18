@@ -5,6 +5,7 @@
     <div class="evento-page">
         <div>
             <div>
+                <p>{{ date('d/m/Y', strtotime($event->date)) }}</p>
                 <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
                 <h1>{{ $event->title }}</h1>
                 <p><ion-icon name="planet-outline"></ion-icon> {{ $event->city }} - <span class="{{ $event->private == 0 ? 'evento-public' : 'evento-private' }}"><ion-icon name="{{ $event->private == 0 ? 'balloon-outline' : 'card-outline' }}"></ion-icon> Evento {{ $event->private == 0 ? 'público' : 'privado' }}</span></p>
