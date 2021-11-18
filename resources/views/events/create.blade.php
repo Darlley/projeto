@@ -38,7 +38,7 @@
                 </div>
     
                 <div class="container-itens">
-                    <label for="items">Adicione itens: </label>
+                    <label>Adicione itens: </label>
                     <div>
                         <label for="items">
                             Cadeiras
