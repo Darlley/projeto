@@ -14,7 +14,7 @@ div{
     width: 100%;
 }
 h1{
-    background: -webkit-linear-gradient(#ff2222, #000);
+    background: -webkit-linear-gradient(#ff2222, #ff2222, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -118,6 +118,14 @@ nav ul li a:hover{
     border-bottom: 6px solid #ff2222;
 }
 
+.home-welcome-img h2{
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+.home-welcome-img p {
+    color: #cccccc;
+}
+
 /* eventos */
 .evento-page{
     display: flex;
@@ -184,6 +192,11 @@ nav ul li a:hover{
 }
 .confirmar-evento-link{
     padding: 1rem 2rem;
+}
+.confirmar-evento-text{
+    color: #5cff5c;
+    display: inline-block;
+    margin-right: 1rem;
 }
 .confirmar-evento:hover{
     background-color: #ff2d2d;

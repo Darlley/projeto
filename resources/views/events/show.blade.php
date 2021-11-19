@@ -25,12 +25,16 @@
                 @endif
 
                 <div class="evento-presense">
+                    @if(!$hasUserJoined)
                     <form class="confirmar-evento" action="/events/join/{{ $event->id }}" method="post">
                         @csrf
                         <a class="confirmar-evento-link" href="/events/join/{{ $event->id }}"
                             onclick="event.preventDefault(); this.closest('form').submit();"
                         >Participar do evento</a>
                     </form>
+                    @else
+                    <p class="confirmar-evento-text">Confirmado <ion-icon name="checkmark-outline"></ion-icon></p>
+                    @endif
                     <p>{{ count($event->users) }} participantes</p>
                 </div>
             </div>

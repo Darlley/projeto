@@ -24,7 +24,7 @@
                         @foreach($events as $event)
                         <li>
                             <a class="home-welcome-img" href="/events/{{ $event->id }}">
-                                {{ $event->title }} -- {{ $event->description }}
+                                <h2>{{ $event->title }} -- {{ $event->description }}</h2>
                                 @if($event->image)
                                     <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
                                 @endif
