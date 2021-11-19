@@ -23,6 +23,16 @@
                     @endforeach
                 </ul>
                 @endif
+
+                <div class="evento-presense">
+                    <form class="confirmar-evento" action="/events/join/{{ $event->id }}" method="post">
+                        @csrf
+                        <a class="confirmar-evento-link" href="/events/join/{{ $event->id }}"
+                            onclick="event.preventDefault(); this.closest('form').submit();"
+                        >Participar do evento</a>
+                    </form>
+                    <p>{{ count($event->users) }} participantes</p>
+                </div>
             </div>
         </div>
     </div>

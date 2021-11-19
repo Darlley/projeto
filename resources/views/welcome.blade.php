@@ -23,11 +23,12 @@
                     <ul class="eventos">
                         @foreach($events as $event)
                         <li>
-                            <a href="/events/{{ $event->id }}">
+                            <a class="home-welcome-img" href="/events/{{ $event->id }}">
                                 {{ $event->title }} -- {{ $event->description }}
                                 @if($event->image)
                                     <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
                                 @endif
+                                <p>{{ count($event->users) }} participantes</p>
                             </a>
                         </li>
                         @endforeach
